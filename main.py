@@ -1,0 +1,1 @@
+print("DEBUG: Program is running")
