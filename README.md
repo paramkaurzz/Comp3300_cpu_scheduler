@@ -64,7 +64,11 @@ Output is received in JSON output and includes:
 }
 ```
 
+## :file_folder: Project Structure
+:construction: This section is under construction and awaiting a finalized file structure from the project team. 
+
 ## :red_circle: AI Usage Disclaimer
+:construction: This section is under construction and awaiting addition from the rest of the project team.
 - This project's README was human-written but AI was used for refinement and clarity of the final structure.
 -
 -
