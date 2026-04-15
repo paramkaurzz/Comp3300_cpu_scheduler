@@ -1,8 +1,6 @@
 # :floppy_disk: CPU Scheduling Simulator (COMP3300)
 This project implements a simulation of classical CPU scheduling algorithms including First-In-First-Out (FIFO), Shortest Job First (SJF), Round Robin, and Priority scheduling. It computes scheduling timelines and performance metrics and produces a JSON output. 
 
-This project was created for COMP3300 Operating Systems Fundamentals in collaboration with Paramjit Sidhu, Alissa Mac Neil, Jasman Saran, and Emmanuel Musinguzi. 
-
 ## :bar_chart: Algorithms
 **In the event of tiebreaks**, the lexicographically smallest PID is used for all algorithms.
 1. **FIFO (First In, First Out)**: Processes are executed in the order they arrive in. 
@@ -28,7 +26,9 @@ Input is taken as a JSON file specifying policy, quantum, and jobs. Each job mus
 - **Arrival Time**: When the process arrives to the CPU. 
 - **Burst Time**: Total amount of time the process requires to execute.
 - **Priority**: If applicable, the numerical priority value; lower values are prioritized.
-The Quantum field is only required for Round Robin scheduling. 
+The Quantum field is only required for Round Robin scheduling and not present in others. 
+
+A sample input for Round Robin is preloaded into `input.json`. Other samples can be found in the `sample_inputs` folder, one for each scheduling algorithm.
 
 ```
 {
@@ -65,10 +65,34 @@ Output is received in JSON output and includes:
 ```
 
 ## :file_folder: Project Structure
-:construction: This section is under construction and awaiting a finalized file structure from the project team. 
+```
+Comp3300_cpu_scheduler/
+├── main.py                  # Entry point of the program
+├── scheduler.py             # Dispatches scheduling algorithms based on policy
+├── fifo.py                  # First-In-First-Out (FIFO) scheduling implementation
+├── sjf.py                   # Shortest Job First (SJF) scheduling implementation
+├── rr.py                    # Round Robin scheduling implementation
+├── priority.py              # Priority scheduling implementation
+├── metrics.py               # Turnaround, waiting time, and averages calculation
+├── io_utils.py              # JSON input parsing and output formatting utilities
+│
+├── sample_inputs/             # Sample scheduling data used in testing
+│   ├── fifo_input.json
+│   ├── sjf_input.json
+│   ├── rr_input.json
+│   └── priority_input.json
+│
+├── sample_outputs/            # Sample outputs produced by data in sample_inputs
+│   ├── fifo_output.json
+│   ├── sjf_output.json
+│   ├── rr_output.json
+│   └── priority_output.json
+│
+├── input.json              # Generic test input
+├── output.json             # Generic output file
+├── README.md
+```
 
 ## :red_circle: AI Usage Disclaimer
-:construction: This section is under construction and awaiting addition from the rest of the project team.
-- This project's README was human-written but AI was used for refinement and clarity of the final structure.
--
--
+- The algorithm implementations were largely human-written. AI was used as a supportive tool for formatting, structure, and as an assistive tool during the final debugging stages. Supporting modules, such as `scheduler.py`, `metrics.py`, and `io_utils`, are fully human-written. 
+- This project's README was fully human-written but AI was used to assist with the final structure and organization of information. 
