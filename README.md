@@ -96,7 +96,5 @@ Comp3300_cpu_scheduler/
 ```
 
 ## :red_circle: AI Usage Disclaimer
-:construction: This section is under construction and awaiting addition from the rest of the project team.
-- This project's README was human-written but AI was used for refinement and clarity of the final structure.
--
--
+- The algorithm implementations were largely human-written. AI was used as a supportive tool for formatting, structure, and as an assistive tool during the final debugging stages. Supporting modules, such as `scheduler.py`, `metrics.py`, and `io_utils`, are fully human-written. 
+- This project's README was fully human-written but AI was used to assist with the final structure and organization of information. 
