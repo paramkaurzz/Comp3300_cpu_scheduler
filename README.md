@@ -1,6 +1,8 @@
 # :floppy_disk: CPU Scheduling Simulator (COMP3300)
 This project implements a simulation of classical CPU scheduling algorithms including First-In-First-Out (FIFO), Shortest Job First (SJF), Round Robin, and Priority scheduling. It computes scheduling timelines and performance metrics and produces a JSON output. 
 
+This project was created for COMP3300 Operating Systems Fundamentals in collaboration with Paramjit Sidhu, Alissa Mac Neil, Jasman Saran, and Emmanuel Musinguzi.
+
 ## :bar_chart: Algorithms
 **In the event of tiebreaks**, the lexicographically smallest PID is used for all algorithms.
 1. **FIFO (First In, First Out)**: Processes are executed in the order they arrive in. 
